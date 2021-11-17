@@ -1,10 +1,11 @@
 import React from "react"
-function Head(){
+import { Link } from "react-router-dom";
+const Head = () => {
     return(
         <div>
-            <a href="">Home</a>
-            <a href="">Profile</a>
-            <a href="">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/contact">Contact</Link>
 
         </div>
     )

@@ -1,5 +1,5 @@
 import React from "react"
-function Foot(){
+const Foot = () => {
     return(
         <div>
             <h1>This is the Footer</h1>
