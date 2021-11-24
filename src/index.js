@@ -10,6 +10,9 @@ import Foot from "./Components/Foot";
 import Head from './Components/Head';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import ProductDetail from './Components/ProductDetail';
+import ColorState from './Components/ColorState';
+import EffectHookCheck from './Components/EffectHookCheck';
+import AllPosts from './Components/AllPosts';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +30,15 @@ ReactDOM.render(
         </Route>
         <Route exact path="/product/:id">
           <ProductDetail/>
+        </Route>
+        <Route exact path="/color">
+          <ColorState/>
+        </Route>
+        <Route exact path="/effect">
+          <EffectHookCheck/>
+        </Route>
+        <Route exact path="/posts">
+          <AllPosts/>
         </Route>
 
       </Switch>
