@@ -13,6 +13,7 @@ import ProductDetail from './Components/ProductDetail';
 import ColorState from './Components/ColorState';
 import EffectHookCheck from './Components/EffectHookCheck';
 import AllPosts from './Components/AllPosts';
+import Login from './Components/Login';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -40,6 +41,10 @@ ReactDOM.render(
         <Route exact path="/posts">
           <AllPosts/>
         </Route>
+        <Route exact path="/login">
+          <Login/>
+        </Route>
+        
 
       </Switch>
       <Foot/>
